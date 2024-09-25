@@ -1,0 +1,30 @@
+name: mobile_app
+description: A Flutter app to visualize sensor data in real-time.
+
+# The following defines the version and build number for your application.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  charts_flutter: ^0.12.0  # For charts and data visualization
+  provider: ^6.0.0          # For state management (optional, if needed for your app)
+  http: ^0.14.0             # For network requests to fetch data from backend
+  
+  # Add any other dependencies your app needs
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/       # Include any images or assets here
+    - assets/icons/
+
+# To add a new dependency, run `flutter pub add <package_name>`.
